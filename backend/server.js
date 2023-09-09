@@ -11,7 +11,13 @@ const app = express();
 
 
 // Enable CORS
-app.use(cors());
+app.use(cors(
+    {
+        origin:["https://todo.vercel.app"],
+        methods:["POST","GET"],
+        credentials:true`
+    }
+));
 
 // Parse JSON request bodies
 app.use(express.json());
