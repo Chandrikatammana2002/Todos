@@ -11,13 +11,7 @@ const app = express();
 
 
 // Enable CORS
-app.use(cors(
-    {
-        origin:["https://todos-lyart-ten.vercel.app/"],
-        methods:["POST","GET"],
-        credentials:true`
-    }
-));
+app.use(cors());
 
 // Parse JSON request bodies
 app.use(express.json());
