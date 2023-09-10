@@ -13,7 +13,7 @@ const app = express();
 // Enable CORS
 app.use(cors(
     {
-        origin:["https://todos.vercel.app"],
+        origin:["https://todos-lyart-ten.vercel.app/"],
         methods:["POST","GET"],
         credentials:true`
     }
@@ -23,10 +23,7 @@ app.use(cors(
 app.use(express.json());
 
 
- //at deployment to get hello
-app.get("/",(req,res)=>{
-   res.json("hello chandu");
-})
+
 
 //connect to database
 
