@@ -13,7 +13,7 @@ const app = express();
 // Enable CORS
 app.use(cors(
     {
-        origin:["https://todo.vercel.app"],
+        origin:["https://todos.vercel.app"],
         methods:["POST","GET"],
         credentials:true`
     }
