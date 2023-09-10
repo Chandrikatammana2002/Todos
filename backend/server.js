@@ -22,6 +22,12 @@ app.use(cors(
 // Parse JSON request bodies
 app.use(express.json());
 
+
+ //at deployment to get hello
+app.get("/",(req,res)=>{
+   res.json("hello chandu");
+})
+
 //connect to database
 
 mongoose.connect("mongodb+srv://chandrikatammana2002:chandrika2002@cluster0.tzm23qv.mongodb.net/CompanyDB?retryWrites=true&w=majority",
