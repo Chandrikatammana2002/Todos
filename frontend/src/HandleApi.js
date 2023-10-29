@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseUrl="https://erin-comfortable-sockeye.cyclic.app/";
+const baseUrl="https://erin-comfortable-sockeye.cyclic.app/"; //url
 
 const getAllTodo=(setTodo)=>{
     axios.get(baseUrl).then(({data})=>{
